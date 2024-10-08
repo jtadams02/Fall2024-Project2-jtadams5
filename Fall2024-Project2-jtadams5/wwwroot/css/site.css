@@ -1,0 +1,117 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Default background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Makes the background image stay in place */
+}
+
+.center-box {
+    display: flex;
+    flex-direction: column;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:5%;
+    justify-content: center;
+    align-items: center;
+
+    border: ridge;
+    border-radius: 30px;
+
+    gap:10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+    margin-top: 20px; 
+    width: 100%;
+}
+
+.buttons {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    font-size: 16px; 
+}
+
+    .buttons:hover {
+        background-color: #45a049; /* Slightly darker green on hover */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: translateY(-2px); /* Small lift effect on hover */
+    }
+
+    .buttons:active {
+        background-color: #3e8e41; /* Even darker green when clicked */
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+        transform: translateY(0); /* Button returns to normal */
+    }
+.time {
+    display: flex;
+    justify-content: center;
+    margin: 0%  auto;
+}
+
+
+.search-results {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(241, 241, 241, 0.8); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    min-height: 600px;
+    margin: 20px auto;
+}
+
+    .search-results p {
+        padding: 10px;
+        margin: 10px 0;
+        background-color: #4CAF50; 
+        color: white;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        .search-results p:hover {
+            background-color: #45a049; 
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px); 
+            cursor: pointer;
+        }
+
+        .search-results p a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .search-results p a:hover {
+                text-decoration: underline;
+            }
